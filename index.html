@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+
+</head>
+<body>
+<!--总容器开始-->
+<div class="container">
+    <h1>我的TODO</h1>
+    <!-- 任务列表-->
+   <div class="task-list">
+       <!--添加任务-->
+       <div class="add-task">
+           <input type="text" placeholder="e.g. 下午记得买菜">
+           <button type="submit">submit</button>
+       </div>
+       <!--任务列表-->
+       <div class="task-item">
+       <span><input type="checkbox"></span>
+       <span class="task-content"> item content 1</span>
+       <span>delete</span>
+       <span> detail</span>
+   </div>
+       <div class="task-item">
+           <span><input type="checkbox"></span>
+           <span class="task-content"> item content 1</span>
+           <span>delete</span>
+           <span> detail</span>
+       </div>
+       <div class="task-item">
+           <span><input type="checkbox"></span>
+           <span class="task-content"> item content 1</span>
+           <span>delete</span>
+           <span> detail</span>
+       </div>
+       <div class="task-item">
+           <span><input type="checkbox"></span>
+           <span class="task-content"> item content 1</span>
+           <span>delete</span>
+           <span> detail</span>
+       </div>
+       <div class="task-item">
+           <span><input type="checkbox"></span>
+           <span class="task-content"> item content 1</span>
+           <span>delete</span>
+           <span> detail</span>
+       </div>
+
+    <!--蒙灰-->
+       <div class="task-detail-mask">
+
+       </div>
+       <!--任务详情-->
+       <div class="task-detail">
+           <div class="content">
+               下午记得买菜
+           </div>
+           <div>
+               <div class="desc">
+                   <textarea name=""></textarea>
+               </div>
+               
+           </div>
+           <div class="remind">
+               <input type="date">
+               <button type="submit">sumbit</button>
+           </div>
+       </div>
+
+
+
+   </div>
+</div>
+
+
+
+
+
+<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>
