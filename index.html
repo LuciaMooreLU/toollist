@@ -2,85 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Todo</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="node_modules/vegas/dist/vegas.css">
+    <link rel="stylesheet" href="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
 
 </head>
 <body>
-<!--总容器开始-->
+<div class="msg">
+    <div class="msg-content"></div>
+    <span class="confirm" >(*ΦωΦ*)  知道了 (=￣ω￣=)</span>
+
+</div>
+<!--大容器-->
 <div class="container">
-    <h1>我的TODO</h1>
-    <!-- 任务列表-->
-   <div class="task-list">
-       <!--添加任务-->
-       <div class="add-task">
-           <input type="text" placeholder="e.g. 下午记得买菜">
-           <button type="submit">submit</button>
-       </div>
-       <!--任务列表-->
-       <div class="task-item">
-       <span><input type="checkbox"></span>
-       <span class="task-content"> item content 1</span>
-       <span>delete</span>
-       <span> detail</span>
-   </div>
-       <div class="task-item">
-           <span><input type="checkbox"></span>
-           <span class="task-content"> item content 1</span>
-           <span>delete</span>
-           <span> detail</span>
-       </div>
-       <div class="task-item">
-           <span><input type="checkbox"></span>
-           <span class="task-content"> item content 1</span>
-           <span>delete</span>
-           <span> detail</span>
-       </div>
-       <div class="task-item">
-           <span><input type="checkbox"></span>
-           <span class="task-content"> item content 1</span>
-           <span>delete</span>
-           <span> detail</span>
-       </div>
-       <div class="task-item">
-           <span><input type="checkbox"></span>
-           <span class="task-content"> item content 1</span>
-           <span>delete</span>
-           <span> detail</span>
-       </div>
-
-    <!--蒙灰-->
-       <div class="task-detail-mask">
-
-       </div>
-       <!--任务详情-->
-       <div class="task-detail">
-           <div class="content">
-               下午记得买菜
-           </div>
-           <div>
-               <div class="desc">
-                   <textarea name=""></textarea>
-               </div>
-               
-           </div>
-           <div class="remind">
-               <input type="date">
-               <button type="submit">sumbit</button>
-           </div>
-       </div>
+    <h1>・· - My Todo - ·・</h1>
+    <!--添加任务-->
+    <form class="add-task">
+        <input  name="content"
+                type="text"
+                autofocus
+                autocomplete="off"
+                placeholder="e.g. 今天有什么要写的吗？">
+        <button type="submit">提交</button>
+    </form>
+    <!--定义任务列表-->
 
 
 
-   </div>
+
+    <div class="task">
+        <div class="task-list">
+        </div>
+        <div class="task-detail-mask"></div>
+
+        <div class="task-detail">
+    </div>
+
+
+<!--     <div class="task-item">
+        <span><input type="checkbox"></span>
+        <span class="task-content">item1</span>
+        <span>delete</span>
+        <span>detail</span>
+
+    </div> -->
+
+
+       
+
+
+
+    <!--定义任务详情-->
+        <!--<div>-->
+             <!--<div class="content">-->
+                <!--下午记得买菜-->
+             <!--</div>-->
+            <!--<div class="desc">-->
+                <!--<textarea id=""></textarea>-->
+            <!--</div>-->
+
+            <!--<div class="remind">-->
+            <!--<input type="date">-->
+
+             <!--</div>-->
+        <!--</div>-->
+        
+    </div>
 </div>
 
 
+<video src="alert.mp3" class="alert"></video>
 
-
-
-<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/vegas/dist/vegas.min.js"></script>
+<script src="node_modules/storejs/dist/store.js"></script>
+<script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
 <script src="js/base.js"></script>
+
 </body>
 </html>
